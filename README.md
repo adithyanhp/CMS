@@ -101,17 +101,6 @@ https://localhost:5001
 
 ---
 
-## 📸 Screenshots
-
-(Add screenshots of your application UI here)
-
-Example screenshots you can include:
-
-* Dashboard
-* Book management page
-* User management page
-
----
 
 ## 📖 Learning Objectives
 
