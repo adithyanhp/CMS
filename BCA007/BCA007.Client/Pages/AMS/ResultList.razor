@@ -1,0 +1,151 @@
+﻿@page "/ams/resultlist"
+@page "/ams/resultlist/{Exam_Id:int}"
+@using BCA007.Shared.DTOs.AMS
+@using BCA007.Shared.Service.AMS
+@inject ISnackbar _snackbar
+@inject IResultService _serv
+@inject IDialogService _dialog
+
+<MudPaper Class="pa-4 mt-6">
+
+    <MudDataGrid T="ResultViewDto"
+                 Dense="true"
+                 Hover="true"
+                 Items="_exam"
+                 Loading="_loading"
+                 QuickFilter="QuickFilter">
+
+        <ToolBarContent>
+            <MudText Typo="Typo.h6">Result List</MudText>
+            <MudSpacer />
+
+            <MudTextField @bind-Value="_searchString"
+                          Placeholder="Search"
+                          Adornment="Adornment.Start"
+                          Immediate="true"
+                          AdornmentIcon="@Icons.Material.Filled.Search"
+                          Class="mt-0" />
+
+            <MudButton StartIcon="@Icons.Material.Filled.Save"
+                       Color="Color.Primary"
+                       Size="Size.Small"
+                       Variant="Variant.Filled"
+                       OnClick="SaveMarks">
+                Save
+            </MudButton>
+        </ToolBarContent>
+
+        <Columns>
+
+            <PropertyColumn Property="x => x.Class_Name" Title="Class Name" />
+
+            <PropertyColumn Property="x => x.FullName" Title="Student Name" />
+
+            <PropertyColumn Property="x => x.Date"
+                            Title="Exam Date"
+                            Format="dd-MM-yyyy" />
+
+            <PropertyColumn Property="x => x.Exam_Type"
+                            Title="Exam Type" />
+
+            <PropertyColumn Property="x => x.Subject_Name"
+                            Title="Subject Name" />
+
+            <PropertyColumn Property="x => x.Marks"
+                            Title="Marks"
+                            Format="0.00" />
+
+            <TemplateColumn Title="Edit Marks">
+                <CellTemplate Context="row">
+                    <MudNumericField @bind-Value="row.Item.Marks"
+                                     Variant="Variant.Text"
+                                     Min="0"
+                                     Max="row.Item.Max_Mark" />
+                </CellTemplate>
+            </TemplateColumn>
+
+        </Columns>
+
+        <PagerContent>
+            <MudDataGridPager PageSizeOptions="new int[] { 5, 10, 25, 100 }" />
+        </PagerContent>
+
+    </MudDataGrid>
+
+</MudPaper>
+
+@code {
+
+    [Parameter]
+    public int? Exam_Id { get; set; }
+
+    private List<ResultViewDto> _exam = new();
+    private string _searchString = string.Empty;
+    private bool _loading;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadData();
+    }
+
+    private async Task LoadData()
+    {
+        try
+        {
+            _loading = true;
+
+            // IMPORTANT: Filter by Id
+
+            _exam = await _serv.GetResultsByExamId(Exam_Id);
+
+            if (_exam == null || !_exam.Any())
+            {
+                _snackbar.Add("No results found.", Severity.Warning);
+            }
+        }
+        catch (Exception ex)
+        {
+            _snackbar.Add(ex.Message, Severity.Error);
+        }
+        finally
+        {
+            _loading = false;
+        }
+    }
+
+    private bool QuickFilter(ResultViewDto x)
+    {
+        if (string.IsNullOrWhiteSpace(_searchString))
+            return true;
+
+        return
+            (x.FullName?.Contains(_searchString, StringComparison.OrdinalIgnoreCase) ?? false) ||
+            (x.Class_Name?.Contains(_searchString, StringComparison.OrdinalIgnoreCase) ?? false) ||
+            (x.Exam_Type?.Contains(_searchString, StringComparison.OrdinalIgnoreCase) ?? false) ||
+            (x.Subject_Name?.Contains(_searchString, StringComparison.OrdinalIgnoreCase) ?? false) ||
+            (x.Subject_Code?.Contains(_searchString, StringComparison.OrdinalIgnoreCase) ?? false) ||
+            x.Id.ToString().Contains(_searchString, StringComparison.OrdinalIgnoreCase);
+    }
+
+    private async Task SaveMarks()
+    {
+        try
+        {
+            _loading = true;
+
+            await _serv.UpdateResults(_exam);
+
+            _snackbar.Add("Marks updated successfully.", Severity.Success);
+
+            await LoadData(); // refresh
+        }
+        catch (Exception ex)
+        {
+            _snackbar.Add(ex.Message, Severity.Error);
+        }
+        finally
+        {
+            _loading = false;
+        }
+    }
+}

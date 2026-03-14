@@ -1,0 +1,279 @@
+﻿@page "/Attendance/attendentrylist"
+@page "/Attendance/attendentrylist/{FrmId:int}"
+@using BCA007.Shared.Service.Attendance
+@inject ISnackbar _snackbar
+@inject IAttendEntryService _serv
+@inject IDialogService _dialog
+
+<MudPaper Class="pa-0 mt-6">
+    <MudDataGrid Dense Hover Items="_list" Loading="_loading"
+                 QuickFilter="QuickFilter"
+                 SortMode="SortMode.Multiple"
+                 @ref="_grid">
+        <ToolBarContent>
+            <MudText Typo="Typo.h6">Attendance Entry Form</MudText>
+            <MudSpacer />
+            <MudTextField @bind-Value="_searchString" Placeholder="Search" Adornment="Adornment.Start" Immediate="true"
+                          AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
+            <MudButtonGroup Color="Color.Primary" Size="Size.Small" Variant="Variant.Filled">
+                @* <MudButton StartIcon="@Icons.Material.Filled.Add"
+                           Color="Color.Primary" Size="Size.Small"
+                           OnClick="CreateDetails">
+                    Add
+                </MudButton> *@
+                <MudButton StartIcon="@Icons.Material.Filled.Refresh"
+                           Color="Color.Primary" Size="Size.Small"
+                           OnClick="OnRefresh">
+                    Refresh
+                </MudButton>
+               @*  <MudButton StartIcon="@Icons.Material.Filled.Help"
+                           Color="Color.Primary" Size="Size.Small"
+                           OnClick="OnRefresh">
+                    Help
+                </MudButton> *@
+            </MudButtonGroup>
+        </ToolBarContent>
+
+        <Columns>
+@*             <PropertyColumn Property="x => x.Att_Form_Id" Title="Id" /> *@
+            <PropertyColumn Property="x => x.Date" Title="Date" />
+            <PropertyColumn Property="x => x.UserName" Title="Student Name" />
+            <PropertyColumn Property="x => x.Class_Name" Title="Class Name" />
+            <PropertyColumn Property="x => x.Att_1" Title="Status" />
+            <PropertyColumn Property="x => x.Att_2" Title="Status" />
+            <PropertyColumn Property="x => x.Att_3" Title="Status" />
+            <PropertyColumn Property="x => x.Att_4" Title="Status" />
+            <PropertyColumn Property="x => x.Att_5" Title="Status" />
+            @* <PropertyColumn Property="x => x.Form_1" Title="Status" />
+            <PropertyColumn Property="x => x.Form_2" Title="Status" />
+            <PropertyColumn Property="x => x.Form_3" Title="Status" />
+            <PropertyColumn Property="x => x.Form_4" Title="Status" />
+            <PropertyColumn Property="x => x.Form_5" Title="Status" /> *@
+
+
+
+            <TemplateColumn Title="Actions">
+                <CellTemplate Context="row">
+                    <MudIconButton Icon="@Icons.Material.Filled.Edit"
+                                   Color="Color.Primary" Size="Size.Small"
+                                   OnClick="@(() => EditDetails(row.Item))" />
+                    <MudIconButton Icon="@Icons.Material.Filled.Delete"
+                                   Color="Color.Error" Size="Size.Small"
+                                   OnClick="@(() => DeleteDetails(row.Item))" />
+                </CellTemplate>
+            </TemplateColumn>
+        </Columns>
+        <PagerContent>
+            <MudDataGridPager PageSizeOptions="new int[] { 5, 10, 25, 100 }" />
+        </PagerContent>
+    </MudDataGrid>
+
+</MudPaper>
+
+@code {
+    [Parameter]
+    public int? FrmId{ get; set; }
+    private MudDataGrid<AttendEntryViewDto> _grid = default!;
+    private List<AttendEntryViewDto> _list = new();
+    private string _searchString = string.Empty;
+    private bool _loading;
+    // protected override async Task OnInitializedAsync()
+    // {
+    //     await OnRefresh();
+    // }
+    protected override async Task OnParametersSetAsync()
+    {
+        await OnRefresh();
+    }
+
+
+    private bool QuickFilter(AttendEntryViewDto x)
+    {
+        if (string.IsNullOrWhiteSpace(_searchString))
+            return true;
+
+       
+         return x.Att_Form_Id.ToString().Contains(_searchString, StringComparison.OrdinalIgnoreCase)
+            ||x.Date.ToString().Contains(_searchString, StringComparison.OrdinalIgnoreCase)
+            || x.UserName.ToString().Contains(_searchString, StringComparison.OrdinalIgnoreCase)
+            || x.FullName.ToString().Contains(_searchString, StringComparison.OrdinalIgnoreCase)
+            || x.Class_Name.ToString().Contains(_searchString, StringComparison.OrdinalIgnoreCase);
+    }
+
+    // private async Task OnRefresh()
+    // {
+    //     try
+    //     {
+    //         _loading = true;
+    //         //await Task.Delay(700);
+    //         //_list = await _serv.GetAllAsync();
+    //         // _att = await _serv.GetAttendanceById(FrmId);
+    //         _list = await _serv.GetAttendanceById(FrmId);
+
+    //         // if (_att == null || !_att.Any())
+    //         // {
+    //         //     _snackbar.Add("No attendance found.", Severity.Warning);
+    //         // }
+    //         // await _grid.ReloadServerData(); // keeps sort & page
+    //     }
+    //     catch (Exception ex)
+    //     {
+    //         _snackbar.Add(ex.Message, Severity.Success);
+    //     }
+    //     finally
+    //     {
+    //         _loading = false;
+    //         await InvokeAsync(StateHasChanged);
+    //     }
+    // }
+    // private async Task OnRefresh()
+    // {
+    //     try
+    //     {
+    //         _loading = true;
+    //         _list = await _serv.GetAttendanceById(FrmId);
+
+    //         if (!_list.Any())
+    //             _snackbar.Add("No attendance found.", Severity.Warning);
+    //     }
+    //     catch (Exception ex)
+    //     {
+    //         _snackbar.Add(ex.Message, Severity.Error);
+    //     }
+    //     finally
+    //     {
+    //         _loading = false;
+    //         StateHasChanged();
+    //     }
+    // }
+
+    // private async Task OnRefresh()
+    // {
+    //     try
+    //     {
+    //         _loading = true;
+
+    //         if (FrmId.HasValue && FrmId.Value > 0)
+    //         {
+    //             // Load entries for specific form
+    //             _list = await _serv.GetAttendanceById(FrmId);
+    //         }
+    //         else
+    //         {
+    //             // Load all entries when no id in URL
+    //             _list = await _serv.GetAllAsync();
+    //         }
+
+    //         if (_list == null || !_list.Any())
+    //             _snackbar.Add("No attendance found.", Severity.Warning);
+    //     }
+    //     catch (Exception ex)
+    //     {
+    //         _snackbar.Add(ex.Message, Severity.Error);
+    //     }
+    //     finally
+    //     {
+    //         _loading = false;
+    //         StateHasChanged();
+    //     }
+    // }
+    private async Task OnRefresh()
+    {
+        try
+        {
+            _loading = true;
+
+            if (FrmId.HasValue && FrmId.Value > 0)
+                _list = await _serv.GetAttendanceById(FrmId);
+            else
+                _list = await _serv.GetAllAsync();
+
+            if (_list == null || !_list.Any())
+                _snackbar.Add("No attendance found.", Severity.Warning);
+        }
+        catch (Exception ex)
+        {
+            _snackbar.Add(ex.Message, Severity.Error);
+        }
+        finally
+        {
+            _loading = false;
+            StateHasChanged();
+        }
+    }
+
+
+    private async Task CreateDetails()
+    {
+        await OpenDetailsDialog(new AttendEntryDto(), "Create");
+    }
+
+    private async Task EditDetails(AttendEntryViewDto dto)
+    {
+        // IMPORTANT: pass a COPY
+        await OpenDetailsDialog(new AttendEntryDto
+        {
+             Id = dto.Id,
+             Att_Form_Id = dto.Att_Form_Id,
+            Period1_Att_Id = dto.Period1_Att_Id,
+            Period2_Att_Id = dto.Period2_Att_Id,
+            Period3_Att_Id = dto.Period3_Att_Id,
+            Period4_Att_Id = dto.Period4_Att_Id,
+            Period5_Att_Id = dto.Period5_Att_Id,
+            Student_Id = dto.Student_Id,
+        
+           
+        }, "Edit");
+    }
+    private async Task DeleteDetails(AttendEntryViewDto dto)
+    {
+        await OpenDetailsDialog(new AttendEntryDto
+        {
+             Id = dto.Id,
+             Att_Form_Id = dto.Att_Form_Id,
+            Period1_Att_Id = dto.Period1_Att_Id,
+            Period2_Att_Id = dto.Period2_Att_Id,
+            Period3_Att_Id = dto.Period3_Att_Id,
+            Period4_Att_Id = dto.Period4_Att_Id,
+            Period5_Att_Id = dto.Period5_Att_Id,
+            Student_Id = dto.Student_Id,
+            //Date = dto.Date,
+            
+
+        }, "Delete");
+    }
+    private async Task OpenDetailsDialog(AttendEntryDto model, string action)
+    {
+        _loading = true;
+        var parameters = new DialogParameters
+        {
+            ["Model"] = model,
+            ["Action"] = action
+        };
+        var options = new DialogOptions
+        {
+            CloseOnEscapeKey = true,
+            MaxWidth = MaxWidth.Small,
+            FullWidth = true,
+            BackdropClick = false
+        };
+
+        var dialog = await _dialog.ShowAsync<AttendEntryEdit>(
+           $"{action} Attendance",
+            parameters, options);
+
+        var result = await dialog.Result;
+        _loading = false;
+
+        if (result == null)
+            return;
+        if (result.Canceled)
+            return;
+        if (result.Data == null)
+            return;
+
+        await OnRefresh();
+        await InvokeAsync(StateHasChanged);
+    }
+
+}

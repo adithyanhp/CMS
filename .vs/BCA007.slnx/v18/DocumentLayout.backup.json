@@ -1,0 +1,225 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4595FD2D-4C75-9F65-A396-D63ADD03E810}|BCA007\\BCA007\\BCA007.csproj|c:\\users\\adith\\documents\\development blazor\\cms\\bca008\\bca007\\bca007\\services\\student\\studentprofileserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4595FD2D-4C75-9F65-A396-D63ADD03E810}|BCA007\\BCA007\\BCA007.csproj|solutionrelative:bca007\\bca007\\services\\student\\studentprofileserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F77AF4F-6F8F-0626-EFB1-307476866477}|BCA007\\BCA007.Client\\BCA007.Client.csproj|c:\\users\\adith\\documents\\development blazor\\cms\\bca008\\bca007\\bca007.client\\pages\\library\\bookissuehistorylist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F77AF4F-6F8F-0626-EFB1-307476866477}|BCA007\\BCA007.Client\\BCA007.Client.csproj|solutionrelative:bca007\\bca007.client\\pages\\library\\bookissuehistorylist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F77AF4F-6F8F-0626-EFB1-307476866477}|BCA007\\BCA007.Client\\BCA007.Client.csproj|c:\\users\\adith\\documents\\development blazor\\cms\\bca008\\bca007\\bca007.client\\pages\\profile\\profilelist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F77AF4F-6F8F-0626-EFB1-307476866477}|BCA007\\BCA007.Client\\BCA007.Client.csproj|solutionrelative:bca007\\bca007.client\\pages\\profile\\profilelist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F77AF4F-6F8F-0626-EFB1-307476866477}|BCA007\\BCA007.Client\\BCA007.Client.csproj|c:\\users\\adith\\documents\\development blazor\\cms\\bca008\\bca007\\bca007.client\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F77AF4F-6F8F-0626-EFB1-307476866477}|BCA007\\BCA007.Client\\BCA007.Client.csproj|solutionrelative:bca007\\bca007.client\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F77AF4F-6F8F-0626-EFB1-307476866477}|BCA007\\BCA007.Client\\BCA007.Client.csproj|c:\\users\\adith\\documents\\development blazor\\cms\\bca008\\bca007\\bca007.client\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F77AF4F-6F8F-0626-EFB1-307476866477}|BCA007\\BCA007.Client\\BCA007.Client.csproj|solutionrelative:bca007\\bca007.client\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4595FD2D-4C75-9F65-A396-D63ADD03E810}|BCA007\\BCA007\\BCA007.csproj|c:\\users\\adith\\documents\\development blazor\\cms\\bca008\\bca007\\bca007\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4595FD2D-4C75-9F65-A396-D63ADD03E810}|BCA007\\BCA007\\BCA007.csproj|solutionrelative:bca007\\bca007\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4595FD2D-4C75-9F65-A396-D63ADD03E810}|BCA007\\BCA007\\BCA007.csproj|c:\\users\\adith\\documents\\development blazor\\cms\\bca008\\bca007\\bca007\\services\\library\\bookissuehistoryserviceserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4595FD2D-4C75-9F65-A396-D63ADD03E810}|BCA007\\BCA007\\BCA007.csproj|solutionrelative:bca007\\bca007\\services\\library\\bookissuehistoryserviceserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4595FD2D-4C75-9F65-A396-D63ADD03E810}|BCA007\\BCA007\\BCA007.csproj|c:\\users\\adith\\documents\\development blazor\\cms\\bca008\\bca007\\bca007\\services\\users\\staffserviceserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4595FD2D-4C75-9F65-A396-D63ADD03E810}|BCA007\\BCA007\\BCA007.csproj|solutionrelative:bca007\\bca007\\services\\users\\staffserviceserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F77AF4F-6F8F-0626-EFB1-307476866477}|BCA007\\BCA007.Client\\BCA007.Client.csproj|c:\\users\\adith\\documents\\development blazor\\cms\\bca008\\bca007\\bca007.client\\pages\\library\\bookissueedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F77AF4F-6F8F-0626-EFB1-307476866477}|BCA007\\BCA007.Client\\BCA007.Client.csproj|solutionrelative:bca007\\bca007.client\\pages\\library\\bookissueedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F77AF4F-6F8F-0626-EFB1-307476866477}|BCA007\\BCA007.Client\\BCA007.Client.csproj|c:\\users\\adith\\documents\\development blazor\\cms\\bca008\\bca007\\bca007.client\\pages\\library\\bookrequestlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F77AF4F-6F8F-0626-EFB1-307476866477}|BCA007\\BCA007.Client\\BCA007.Client.csproj|solutionrelative:bca007\\bca007.client\\pages\\library\\bookrequestlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4595FD2D-4C75-9F65-A396-D63ADD03E810}|BCA007\\BCA007\\BCA007.csproj|c:\\users\\adith\\documents\\development blazor\\cms\\bca008\\bca007\\bca007\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4595FD2D-4C75-9F65-A396-D63ADD03E810}|BCA007\\BCA007\\BCA007.csproj|solutionrelative:bca007\\bca007\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4595FD2D-4C75-9F65-A396-D63ADD03E810}|BCA007\\BCA007\\BCA007.csproj|c:\\users\\adith\\documents\\development blazor\\cms\\bca008\\bca007\\bca007\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4595FD2D-4C75-9F65-A396-D63ADD03E810}|BCA007\\BCA007\\BCA007.csproj|solutionrelative:bca007\\bca007\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 474,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookIssueHistoryList.razor",
+              "DocumentMoniker": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007.Client\\Pages\\Library\\BookIssueHistoryList.razor",
+              "RelativeDocumentMoniker": "BCA007\\BCA007.Client\\Pages\\Library\\BookIssueHistoryList.razor",
+              "ToolTip": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007.Client\\Pages\\Library\\BookIssueHistoryList.razor",
+              "RelativeToolTip": "BCA007\\BCA007.Client\\Pages\\Library\\BookIssueHistoryList.razor",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-28T11:45:13.356Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "BCA007\\BCA007\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "BCA007\\BCA007\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAQwJkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T09:22:44.043Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007.Client\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "BCA007\\BCA007.Client\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007.Client\\Pages\\Home.razor",
+              "RelativeToolTip": "BCA007\\BCA007.Client\\Pages\\Home.razor",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAswEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-27T15:47:35.915Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007.Client\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "BCA007\\BCA007.Client\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007.Client\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "BCA007\\BCA007.Client\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAGsAAAAAAAAAAADwv30AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-27T16:05:34.511Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProfileList.razor",
+              "DocumentMoniker": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007.Client\\Pages\\Profile\\ProfileList.razor",
+              "RelativeDocumentMoniker": "BCA007\\BCA007.Client\\Pages\\Profile\\ProfileList.razor",
+              "ToolTip": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007.Client\\Pages\\Profile\\ProfileList.razor",
+              "RelativeToolTip": "BCA007\\BCA007.Client\\Pages\\Profile\\ProfileList.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKYBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-04T06:42:00.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentProfileServer.cs",
+              "DocumentMoniker": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007\\Services\\Student\\StudentProfileServer.cs",
+              "RelativeDocumentMoniker": "BCA007\\BCA007\\Services\\Student\\StudentProfileServer.cs",
+              "ToolTip": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007\\Services\\Student\\StudentProfileServer.cs",
+              "RelativeToolTip": "BCA007\\BCA007\\Services\\Student\\StudentProfileServer.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwI4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T06:41:19.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BookRequestList.razor",
+              "DocumentMoniker": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007.Client\\Pages\\Library\\BookRequestList.razor",
+              "RelativeDocumentMoniker": "BCA007\\BCA007.Client\\Pages\\Library\\BookRequestList.razor",
+              "ToolTip": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007.Client\\Pages\\Library\\BookRequestList.razor",
+              "RelativeToolTip": "BCA007\\BCA007.Client\\Pages\\Library\\BookRequestList.razor",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-28T11:15:29.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookIssueEdit.razor",
+              "DocumentMoniker": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007.Client\\Pages\\Library\\BookIssueEdit.razor",
+              "RelativeDocumentMoniker": "BCA007\\BCA007.Client\\Pages\\Library\\BookIssueEdit.razor",
+              "ToolTip": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007.Client\\Pages\\Library\\BookIssueEdit.razor",
+              "RelativeToolTip": "BCA007\\BCA007.Client\\Pages\\Library\\BookIssueEdit.razor",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAF8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-28T11:13:57.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookIssueHistoryServiceServer.cs",
+              "DocumentMoniker": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007\\Services\\Library\\BookIssueHistoryServiceServer.cs",
+              "RelativeDocumentMoniker": "BCA007\\BCA007\\Services\\Library\\BookIssueHistoryServiceServer.cs",
+              "ToolTip": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007\\Services\\Library\\BookIssueHistoryServiceServer.cs",
+              "RelativeToolTip": "BCA007\\BCA007\\Services\\Library\\BookIssueHistoryServiceServer.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAvwBwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-28T11:45:43.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007\\appsettings.json",
+              "RelativeDocumentMoniker": "BCA007\\BCA007\\appsettings.json",
+              "ToolTip": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007\\appsettings.json",
+              "RelativeToolTip": "BCA007\\BCA007\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-27T17:09:08.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StaffServiceServer.cs",
+              "DocumentMoniker": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007\\Services\\Users\\StaffServiceServer.cs",
+              "RelativeDocumentMoniker": "BCA007\\BCA007\\Services\\Users\\StaffServiceServer.cs",
+              "ToolTip": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007\\Services\\Users\\StaffServiceServer.cs",
+              "RelativeToolTip": "BCA007\\BCA007\\Services\\Users\\StaffServiceServer.cs",
+              "ViewState": "AgIAAAQBAAAAAAAAAAAwwBwBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T09:13:53.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007\\Components\\App.razor",
+              "RelativeDocumentMoniker": "BCA007\\BCA007\\Components\\App.razor",
+              "ToolTip": "C:\\Users\\adith\\Documents\\Development Blazor\\CMS\\BCA008\\BCA007\\BCA007\\Components\\App.razor",
+              "RelativeToolTip": "BCA007\\BCA007\\Components\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-27T16:06:49.691Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
