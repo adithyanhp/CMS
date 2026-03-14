@@ -142,7 +142,6 @@ This project is for **educational purposes**.
 
 **Adithyan H P**
 
-GitHub:
-[https://github.com/adithyanhp](https://github.com/adithyanhp)
-
+GitHub:  
+https://github.com/adithyanhp
 ```
