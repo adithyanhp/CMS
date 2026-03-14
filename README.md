@@ -146,5 +146,3 @@ GitHub:
 [https://github.com/adithyanhp](https://github.com/adithyanhp)
 
 ```
-
-```
